@@ -1,0 +1,13 @@
+numero = int(input("Indique um numero: "))
+fatorial = 1
+
+print(f"Cálculo de {numero}!: ", end="")
+
+while numero > 0:
+    print(f"{numero}", end="")  # Imprime o número atual
+    if numero > 1:
+        print(" * ", end="")  # Se não for o último número, imprime " * "
+    fatorial *= numero  # Multiplica pelo número atual
+    numero -= 1  # Reduz o número
+
+print(f" = {fatorial}")
