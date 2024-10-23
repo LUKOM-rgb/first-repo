@@ -1,10 +1,10 @@
-def maior(numeros):
+def maior(numeros:int):
 
     
-    maximo = 0
-    for i in range (0,numero):
-        if numero > i:
-            maximo = numero
+    maximo = numeros[0]
+    for i in range (0,numeros):
+        if numeros[i] > i:
+            maximo = numeros[i]
     return maximo
 
      
