@@ -2,10 +2,12 @@ listnumeros = []
 
 for i in range(0,11):
     numero = int(input("Insira um numero :"))
-    if 0 < numero <= 20:
+    if  10 <= numero :
         listnumeros.append(numero)
     else:
-        break
+        continue
 
 print(listnumeros)
+
+
 
