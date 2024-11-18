@@ -48,9 +48,19 @@ h2 {
     text-align: center;
 }
 
+h3{
+    text-align: center;
+    font-family: 'Futura', sans-serif;   
+}
 p {
     font-family: 'Lulo Clean', sans-serif;
     font-size: 1em;
+}
+
+.historia-p{
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .header-container {
@@ -58,44 +68,64 @@ p {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: #500700;
     padding: 15px 20px;
     position: relative;
+    height: 500px;
+    overflow: hidden;
 }
-
-.simbolo {
-    font-size: 4.5em;
-    color: #ffffff;
-    text-align: right;
-    margin: 0;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centraliza o menu */
-    gap: 15px;
-    margin: 0;
-    flex-grow: 1; /* Faz o menu ocupar o espaço disponível */
+.background-image{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(139, 53, 46, 0.8);
-    z-index: 1000;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra todo o espaço */
+    z-index: -1; /* Envia para o fundo */
+}
+.navbar {
+        position: fixed; /* Fixa no topo da página */
+        top: 0;
+        left: 0;
+        width: 100%; /* Ocupa toda a largura */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px; /* Altura do menu */
+        z-index: 10; /* Fica acima de outros elementos */
+        padding: 0 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+        background-color: rgb(138, 53, 46);
+}
+.candal-menu {
+    height: 60px; /* Ajuste para o tamanho desejado */
+    margin-right: auto; /* Alinha à esquerda */
+    margin-left: 20px;
 }
 
-.navbar a {
+
+.navbar img {
+    height: 50px; /* Define o tamanho do logo */
+    width: auto;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os links */
+}
+
+.navbar-links a {
     color: whitesmoke;
     text-decoration: none;
     font-weight: bold;
     padding: 5px 10px;
+    transition: background-color 0.3s ease;
 }
 
-.navbar a:hover {
+.navbar-links a:hover {
     background-color: #500700;
     border-radius: 5px;
 }
+
 
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
