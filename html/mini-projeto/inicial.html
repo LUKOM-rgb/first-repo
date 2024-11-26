@@ -5,100 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="projeto.css">
 </head>
 <body>
-    <div class="header-container">
-        <img src="assets/mainimage.jpg" alt="Logo grande de fundo" class="background-image">
-        <nav class="navbar">
-            <img src="assets/candal.jpg" alt="Logo" class="candal-menu">
-            <div class="navbar-links">
-                <a href="inicial.html">Home</a>
-                <a href="entradas.html">Entradas</a>
-                <a href="#principal">Prato Principal</a>
-                <a href="#sobremesas">Sobremesas</a>
-                <a href="#contato">Contato</a>
-                <a href="historia.html">História</a>
-            </div>
-        </nav>
-    </div>
-    <main class="container mt-5">
-        <section class="row">
-            <!-- Produto 1 -->
-            <article class="col-md-4 mb-4">     
-                <div class="card">
-                    <img src="assets/379617.1200x675.jpg" class="card-img-top" alt="Imagem do Produto 1">
-                    <div class="card-body">
-                        <h3 class="card-title">Entradas</h3>
-                        <p class="card-text">Descrição breve do produto. Este é um ótimo produto.</p>
-                        <p class="card-text"><strong></strong></p>
-                        <a href="entradas.html" class="btn btn-primary">Ver mais</a>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Produto 2 -->
-            <article class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="assets/azeitonas_marinadas_com_citrinos_e_louto.jpg" class="card-img-top" alt="Imagem do Produto 2">
-                    <div class="card-body">
-                        <h3 class="card-title">Prato Principal</h3>
-                        <p class="card-text">Descrição breve do produto. Este é um ótimo produto.</p>
-                        <p class="card-text"><strong></strong></p>
-                        <a href="prato.html" class="btn btn-primary">Ver mais</a>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Produto 3 -->
-            <article class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="assets/tabua-de-queijos-enchidos.jpg" class="card-img-top" alt="Imagem do Produto 3">
-                    <div class="card-body">
-                        <h3 class="card-title">Sobremesas</h3>
-                        <p class="card-text">Descrição breve do produto. Este é um ótimo produto.</p>
-                        <p class="card-text"><strong></strong></p>
-                        <a href="sobremesas.html" class="btn btn-primary">Ver mais</a>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <br><div class="carousel-container">
-            <!-- Inputs do tipo rádio para controlar as imagens -->
-            <input type="radio" name="carousel" id="item-1" checked>
-            <input type="radio" name="carousel" id="item-2">
-            <input type="radio" name="carousel" id="item-3">
-    
-            <!-- As imagens do carrossel -->
-            <div class="carousel">
-                <div class="carousel-item">
-                    <img src="assets/grelados_1.jpg" alt="Prato delicioso 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/grelaods_2.jpg" alt="Prato delicioso 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/grelados_3.jpg" alt="Prato delicioso 3">
-                </div>
-            </div>
-    
-            <!-- Controles para alternar -->
-            <div class="controls">
-                <label for="item-1" class="control"></label>
-                <label for="item-2" class="control"></label>
-                <label for="item-3" class="control"></label>
-            </div>
+
+      
+            <!-- Carrossel -->
+            <div class="carousel-container">
+    <div class="carousel">
+        <div class="carousel-slide">
+            <div class="carousel-item" style="background-image: url('assets/amirali-mirhashemian-eRyMytuT0yg-unsplash.jpg');"></div>
         </div>
-    </main>
+        <div class="carousel-slide">
+            <div class="carousel-item" style="background-image: url('assets/grilled-fish-barbecue-with-vegetables-dip-sauce.jpg');"></div>
+        </div>
+        <div class="carousel-slide">
+            <div class="carousel-item" style="background-image: url('assets/grilled-meat-with-herbs-tomato-salt-bread-sauce-side-view.jpg');"></div>
+        </div>
+    </div>
+</div>
+            
+            <!-- Navegação -->
+            <nav class="navbar">
+                <img src="assets/candal.jpg" alt="Logo" class="candal-menu">
+                <div class="navbar-links">
+                    <a href="inicial.html">Home</a>
+                    <a href="#entradas">Entradas</a>
+                    <a href="#pratos">Prato Principal</a>
+                    <a href="#sobremesas">Sobremesas</a>
+                    <a href="#contato">Contato</a>
+                    <a href="#historia">História</a>
+                </div>
+            </nav>
+        </div>
+        <br>
+        <div id="historia" class="historia-p">
+            <p><h3> Saga dos Grelhados do Candal: Do Fumo ao Sucesso em Gaia</h3></p>
+        
+        <p>Era uma vez, na pacata freguesia de Candal, em Vila Nova de Gaia, um pequeno sonho que nasceu entre faíscas de brasas e o aroma irresistível de carne grelhada. Tudo começou com um modesto grelhador, algumas mesas de madeira e a determinação de uma família local que acreditava no poder de reunir pessoas em torno de boa comida.
+        
+        <br>A ideia surgiu de António, um apaixonado pela arte dos grelhados, que herdou a tradição de grelhar da sua avó, uma mulher que fazia magia com carvão e temperos simples. Ele e a sua esposa, Maria, decidiram montar uma pequena churrasqueira à beira da estrada, no coração de Candal. Era um local humilde, mas com uma essência especial: o sorriso dos clientes e o sabor inconfundível dos seus pratos.</p>
+        
+        <p><h3>O Segredo do Sucesso</h3></p>
+        
+        <p>O segredo do sucesso dos Grelhados do Candal sempre esteve no amor pela qualidade. Desde o início, António fazia questão de selecionar as melhores carnes da região, temperando-as com uma receita familiar que incluía ervas e especiarias locais. Mas não era apenas a comida que encantava: o ambiente acolhedor, com mesas partilhadas e o cheiro convidativo de grelhados no ar, tornava o espaço num ponto de encontro para famílias, amigos e até desconhecidos.
+        
+        A fama começou a espalhar-se. Primeiro, os vizinhos de Candal. Depois, pessoas de outras freguesias começaram a aparecer, atraídas pela conversa de um frango de churrasco tão suculento que mal se precisava de faca. O "bife à casa" tornou-se lendário, e a posta de vitela, uma iguaria que fez muitos atravessarem a Ponte D. Luís só para saboreá-la.</p>
+        
+        <p><h3>Expansão e Reconhecimento</h3></p>
+        
+        <p>Com o passar dos anos, o pequeno grelhador evoluiu para um restaurante espaçoso, mas sem perder o espírito caseiro que o tornava especial. A cozinha foi modernizada, mas o grelhador continuava a ocupar o centro do palco, como uma relíquia viva da tradição.</p>
+        
+        <p>Os Grelhados do Candal tornaram-se um nome conhecido em Vila Nova de Gaia. Visitantes de longe vinham para experimentar o seu famoso bacalhau na brasa e os secretos de porco ibérico. Não tardou para que o restaurante começasse a aparecer em guias gastronómicos, atraindo turistas e consolidando-se como um marco da gastronomia local.</p>
+        
+        <p><h3>O Legado</h3></p>
+        
+        <p>Hoje, os Grelhados do Candal são mais do que um restaurante: são um símbolo de persistência e paixão. A família de António ainda lidera o negócio, passando a tradição para a próxima geração, garantindo que o espírito original permaneça vivo.
+        
+        E, assim, o que começou como um pequeno sonho envolto em fumo e brasas tornou-se um dos maiores orgulhos de Gaia, provando que a combinação de boa comida e um coração caloroso pode conquistar o mundo, uma grelha de cada vez.</p>    
+            </div>
+        <h1 style="color: whitesmoke; background-color: black;">Os Nosso melhores pratos</h1>
+        
+        <section id="entradas">
+            <h1>Entradas</h1>
+            <div class="portfolio">
+                <div class="card">
+                    <img src="assets/azeitonas_marinadas_com_citrinos_e_louto.jpg" alt="Entrada 1">
+                    <h3>Azeitonas</h3>
+                    <a href="#">Ver mais</a>
+                </div>
+                <div class="card">
+                    <img src="assets/brazilian-chicken-pastel-table.jpg" alt="Entrada 2">
+                    <h3>Rissois</h3>
+                    <a href="#">Ver mais</a>
+                </div>
+            </div>
+        </section>
     
+        <!-- Seção de Pratos Principais -->
+        <section id="pratos">
+            <h1>Pratos Principais</h1>
+            <div class="portfolio">
+                <div class="card">
+                    <img src="assets/fried-fish-with-lemon-slices-wooden-board.jpg" alt="Prato Principal 1">
+                    <h3>Dourada</h3>
+                    <a href="#">Ver mais</a>
+                </div>
+                <div class="card">
+                    <img src="assets/grilled-meat-with-herbs-tomato-salt-bread-sauce-side-view.jpg" alt="Prato Principal 2">
+                    <h3>Bife há Lenhador</h3>
+                    <a href="#">Ver mais</a>
+                </div>
+                <div class="card">
+                    <img src="assets/grelaods_2.jpg" alt="Prato Principal 3">
+                    <h3>Frango Estufado</h3>
+                    <a href="#">Ver mais</a>
+                </div>
+            </div>
+        </section>
     
+        <!-- Seção de Sobremesas -->
+        <section id="sobremesas">
+            <h1>Sobremesas</h1>
+            <div class="portfolio">
+                <div class="card">
+                    <img src="assets/a-studios-rWAwhghF4ag-unsplash.jpg" alt="Sobremesa 1">
+                    <h3>Chesecake</h3>
+                    <a href="#">Ver mais</a>
+                </div>
+                <div class="card">
+                    <img src="assets/abhishek-hajare-G0xaK8Lfdlg-unsplash.jpg" alt="Sobremesa 2">
+                    <h3>Mousse</h3>
+                    <a href="#">Ver mais</a>
+                </div>
+                <div class="card">
+                    <img src="assets/american-heritage-chocolate-YQ9S0RU8LE8-unsplash.jpg" alt="Sobremesa 3">
+                    <h3>Bolo de chocolate</h3>
+                    <a href="#">Ver mais</a>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <h1>Contato</h1>
+            <form action="#" method="post">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" class="form-control" required>
     
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
     
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" class="form-control">
     
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" class="form-control" rows="5" required></textarea>
     
-    </section>
-    <footer>
-        <section class="contactos">
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" class="form-control" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="dúvidas">Dúvidas</option>
+                    <option value="sugestões">Sugestões</option>
+                    <option value="reclamações">Reclamações</option>
+                    <option value="outros">Outros</option>
+                </select>
+    
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+        <footer>
+       <br>
+        <section id="contato" class="contactos">
             <h2>Contactos</h2>
             <div class="info">
                 <p><strong>Telefone:</strong> +351 912 345 678</p>
