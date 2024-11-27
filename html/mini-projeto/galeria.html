@@ -1,56 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Página Inicial</title>
-        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="projeto.css">
-    <title>Página de Fotos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratos do Restaurante</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #fdfdfd;
+            color: #333;
         }
+
+        header {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Monoton', cursive;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
             padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
         }
-        .gallery img {
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
             width: 100%;
-            height: auto;
-            border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .gallery-item h3 {
+            font-size: 1.2rem;
+            margin: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .gallery-item p {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0 10px 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9rem;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="carousel-container">
-        <div class="carousel">
-            <div class="carousel-slide">
-                <div class="carousel-item" style="background-image: url('assets/amirali-mirhashemian-eRyMytuT0yg-unsplash.jpg');"></div>
-            </div>
-            <div class="carousel-slide">
-                <div class="carousel-item" style="background-image: url('assets/grilled-fish-barbecue-with-vegetables-dip-sauce.jpg');"></div>
-            </div>
-            <div class="carousel-slide">
-                <div class="carousel-item" style="background-image: url('assets/grilled-meat-with-herbs-tomato-salt-bread-sauce-side-view.jpg');"></div>
-            </div>
+    <header>Pratos do Restaurante</header>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="abhishek-hajare-G0xaK8Lfdlg-unsplash.jpg" alt="Prato 1">
+            <h3>Frango Grelhado</h3>
+            <p>Suculento frango grelhado com especiarias.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="abhishek-hajare-G0xaK8Lfdlg-unsplash.jpg" alt="Prato 2">
+            <h3>Peixe ao Molho</h3>
+            <p>Delicioso peixe grelhado com molho de ervas.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="abhishek-hajare-G0xaK8Lfdlg-unsplash.jpg" alt="Prato 3">
+            <h3>Costelas BBQ</h3>
+            <p>Costelas ao molho barbecue, perfeitas para compartilhar.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="abhishek-hajare-G0xaK8Lfdlg-unsplash.jpg" alt="Prato 4">
+            <h3>Salada de Legumes</h3>
+            <p>Salada leve e refrescante com temperos especiais.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="abhishek-hajare-G0xaK8Lfdlg-unsplash.jpg" alt="Prato 5">
+            <h3>Picanha na Brasa</h3>
+            <p>Picanha grelhada ao ponto, acompanhada de farofa.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="abhishek-hajare-G0xaK8Lfdlg-unsplash.jpg" alt="Prato 6">
+            <h3>Sobremesa Especial</h3>
+            <p>Mousse de chocolate com calda de frutas vermelhas.</p>
         </div>
     </div>
-    <div class="gallery">
-        <img src="assets/abhishek-hajare-G0xaK8Lfdlg-unsplash.jpg" alt="Foto 1">
-        <img src="assets/abhishek-hajare-G0xaK8Lfdlg-unsplash.jpg" alt="Foto 2">
-        <img src="assets/abhishek-hajare-G0xaK8Lfdlg-unsplash.jpg" alt="Foto 3">
-        <img src="assets/abhishek-hajare-G0xaK8Lfdlg-unsplash.jpg" alt="Foto 4">
-        <img src="assets/abhishek-hajare-G0xaK8Lfdlg-unsplash.jpg" alt="Foto 5">
-        <img src="assets/abhishek-hajare-G0xaK8Lfdlg-unsplash.jpg" alt="Foto 6">
-        <!-- Adicione mais fotos conforme necessário -->
-    </div>
+    <footer>© 2024 Grelhados do Candal - Todos os direitos reservados</footer>
 </body>
+</html>
