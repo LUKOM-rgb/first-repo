@@ -385,7 +385,7 @@ label {
 
 
 
-.contactos {
+ .contactos {
     background-color: rgb(138, 53, 46);
     color: white;
     padding: 20px;
@@ -414,4 +414,4 @@ label {
 
 .contactos .redes-sociais a:hover {
     color: #ffd700;
-}
+} 
