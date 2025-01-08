@@ -1,0 +1,159 @@
+Claro! Aqui está um resumo sobre como trabalhar com **ficheiros em Python**:
+
+---
+
+## **1. Abrir e Fechar Ficheiros**
+
+Para trabalhar com ficheiros em Python, usamos a função **`open()`**:
+
+```python
+file = open("ficheiro.txt", "modo")
+# Operações com o ficheiro
+file.close()
+```
+
+- **Importante:** Sempre feche o ficheiro após o uso com `close()` ou utilize **`with`**, que fecha automaticamente:
+
+```python
+with open("ficheiro.txt", "modo") as file:
+    # Operações com o ficheiro
+```
+
+---
+
+## **2. Modos de Abertura**
+
+| Modo | Descrição                                      |
+|------|-----------------------------------------------|
+| `r`  | Leitura (erro se o ficheiro não existir).      |
+| `w`  | Escrita (cria ou sobrescreve o ficheiro).      |
+| `a`  | Escrita (acrescenta ao final do ficheiro).     |
+| `r+` | Leitura e escrita (erro se não existir).       |
+| `w+` | Leitura e escrita (cria ou sobrescreve).       |
+| `a+` | Leitura e escrita (acrescenta ao final).       |
+| `b`  | Binário (adicionado a qualquer modo acima).    |
+
+Exemplo: `rb` para leitura binária.
+
+---
+
+## **3. Ler Ficheiros**
+
+### **a. Ler o ficheiro inteiro**
+```python
+with open("ficheiro.txt", "r") as file:
+    conteudo = file.read()
+    print(conteudo)
+```
+
+### **b. Ler linha por linha**
+```python
+with open("ficheiro.txt", "r") as file:
+    for linha in file:
+        print(linha.strip())  # Remove espaços em branco no final
+```
+
+### **c. Ler todas as linhas como uma lista**
+```python
+with open("ficheiro.txt", "r") as file:
+    linhas = file.readlines()  # Lista onde cada linha é um elemento
+    print(linhas)
+```
+
+---
+
+## **4. Escrever em Ficheiros**
+
+### **a. Sobrescrever (`w`)**
+```python
+with open("ficheiro.txt", "w") as file:
+    file.write("Este é o novo conteúdo.\n")
+```
+
+### **b. Acrescentar (`a`)**
+```python
+with open("ficheiro.txt", "a") as file:
+    file.write("Linha adicional.\n")
+```
+
+---
+
+## **5. Ler e Escrever**
+
+Para abrir um ficheiro para leitura e escrita, use `r+`, `w+`, ou `a+`.
+
+```python
+with open("ficheiro.txt", "r+") as file:
+    conteudo = file.read()  # Ler o conteúdo
+    file.write("\nNova linha adicionada!")  # Acrescentar
+```
+
+---
+
+## **6. Trabalhar com Dados Estruturados**
+
+### **a. Escrever lista ou dicionário**
+Use o módulo `json` para trabalhar com listas ou dicionários.
+
+```python
+import json
+
+dados = {"nome": "João", "idade": 30}
+with open("dados.json", "w") as file:
+    json.dump(dados, file)  # Escreve em formato JSON
+```
+
+### **b. Ler JSON**
+```python
+with open("dados.json", "r") as file:
+    dados = json.load(file)  # Converte JSON de volta para dicionário
+    print(dados)
+```
+
+---
+
+## **7. Manipular Erros com Ficheiros**
+
+Use `try-except` para lidar com erros, como ficheiro inexistente:
+
+```python
+try:
+    with open("ficheiro_inexistente.txt", "r") as file:
+        conteudo = file.read()
+except FileNotFoundError:
+    print("Ficheiro não encontrado!")
+```
+
+---
+
+## **8. Exemplo Completo**
+
+Vamos criar um ficheiro, escrever nele, e depois ler o conteúdo:
+
+```python
+# Criar e escrever no ficheiro
+with open("exemplo.txt", "w") as file:
+    file.write("Primeira linha.\n")
+    file.write("Segunda linha.\n")
+
+# Ler o conteúdo do ficheiro
+with open("exemplo.txt", "r") as file:
+    for linha in file:
+        print(linha.strip())
+```
+
+---
+
+## **Resumo de Funções Importantes**
+
+| Função          | Descrição                              |
+|------------------|----------------------------------------|
+| `open()`         | Abre um ficheiro.                     |
+| `read()`         | Lê o ficheiro inteiro como string.     |
+| `readline()`     | Lê uma linha do ficheiro.             |
+| `readlines()`    | Lê todas as linhas como lista.         |
+| `write()`        | Escreve texto no ficheiro.            |
+| `writelines()`   | Escreve uma lista de strings.         |
+| `close()`        | Fecha o ficheiro manualmente.         |
+
+Se precisar de exemplos mais específicos, é só dizer! 😊
